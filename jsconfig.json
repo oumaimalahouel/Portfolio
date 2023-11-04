@@ -1,6 +1,8 @@
+// jsconfig.json configure le compilateur JavaScript/TypeScript pour un projet en indiquant comment traiter les fichiers JavaScript, les options de résolution des modules, les bibliothèques disponibles, les répertoires à inclure et ceux à exclure, etc. Cela permet à l'éditeur et au compilateur de fonctionner de manière plus efficace et de fournir une meilleure assistance lors du développement de votre projet.
+
 {
     "compilerOptions": {
-      "checkJs": true,
+      "checkJs": true,//Cette option indique au compilateur de vérifier les fichiers JavaScript (.js) pour détecter des erreurs potentielles. Cela peut être utile si vous utilisez JavaScript avec TypeScript ou si vous souhaitez bénéficier de la vérification de type pour les fichiers JavaScript.
       "jsx": "react-jsx",
       "baseUrl": "src",
       "resolveJsonModule": true,
