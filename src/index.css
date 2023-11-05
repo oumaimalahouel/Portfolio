@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,500;0,700;1,500&family=Sigmar&display=swap');
 html {
   font-family: 'Roboto', sans-serif;
+  letter-spacing:1px  ;
 }
 *{
   margin: 0;
@@ -11,6 +12,10 @@ html {
   --primary:#000;
   --secondary :rgb(24 24 27);
   --border: #ffe5e516;
+  --title:rgb(244 244 245);
+  --subtitle:rgb(161 161 170);
+  --bgHeader:rgb(39,39,42);
+  --blue: rgb(93, 188, 252);
 }
 .light{
   --primary:#fff;
@@ -31,3 +36,25 @@ background-color:var(--secondary) ;
   border-bottom: 1px solid var(--border);
   margin:3rem 0;
 }
+li{
+  list-style : none;
+  
+}
+a{
+  text-decoration: none;
+  transition: 0.5s;
+  
+}
+a:hover{
+  cursor:pointer;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+button{
+  all:unset;
+  cursor:pointer;}/*eliminer tout les fonts par defaut de buton*/
+  button :active{
+    scale:0.9;
+  }
