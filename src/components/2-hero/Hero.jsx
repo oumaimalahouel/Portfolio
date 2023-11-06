@@ -5,8 +5,8 @@ const Hero = () => {
     <section className='hero flex'>
     
         <div className="right-section">
-        <span className='hello'>Hello,</span><br /><br />
-        <span className="inroduction">I'm <span className="introName">Oumaima</span><br/> Passionate Front-End Developer with a Focus on React.js</span><br/>
+        <span className='hello'>Hello,</span><br />
+        <span className="inroduction">I'm <span className="introName">Oumaima</span><br/> Passionate Front-End Developer with a Focus on React.js</span>
       <p className="introPara"> I'm an enthusiastic and creative front-end developer, specializing in JavaScript web development with a particular passion for React.js. My goal is to create outstanding user experiences and develop high-performance web applications.</p>
    <div className="icons flex">
     <div className="icon icon-linkedin"></div>

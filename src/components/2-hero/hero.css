@@ -1,20 +1,17 @@
 section.hero {
-  margin-top: 3rem;
   justify-content: space-between;
 }
 
-section.hero .left-section {
-}
 
 .hero .avatar {
-  height: 78vh;
-  width: 50vh;
+  height: 85vh;
+  width: 54vh;
 }
 .right-section {
-  height: 85vh;
-  width: 60%;
+ 
+ 
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--title);
 }
 .hello {
@@ -34,13 +31,14 @@ p {
   line-height: 2.2rem;
 }
 .introPara {
-  margin-top: 3rem;
+ 
   color: var(--subtitle);
 }
 .icons {
+    margin-top: 1.5rem;
   display: flex;
   justify-content: space-evenly;
-  margin: 5rem;
+ 
   color: var(--orange);
 }
 .icon:hover {
