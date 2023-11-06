@@ -1,0 +1,99 @@
+section.hero {
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+
+section.hero .left-section {
+}
+
+.hero .avatar {
+  height: 78vh;
+  width: 50vh;
+}
+.right-section {
+  height: 85vh;
+  width: 60%;
+  padding: 2rem;
+  font-size: 2rem;
+  color: var(--title);
+}
+.hello {
+  font-size: 1rem;
+  font-weight: 100;
+}
+.introName {
+  color: var(--orange);
+  font-size: 1.75rem;
+}
+.inroduction {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 0.9rem;
+  margin: 20px;
+  line-height: 2.2rem;
+}
+.introPara {
+  margin-top: 3rem;
+  color: var(--subtitle);
+}
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5rem;
+  color: var(--orange);
+}
+.icon:hover {
+  rotate: 360deg;
+  transition: 0.4s;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+    section.hero{
+        margin-top: -0.4em;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    
+  }
+
+  .hero .avatar {
+    height:20vh;
+    width: 15vh;
+    border-radius: 50% ;
+    border: 1px solid var(--orange);
+    padding:3px
+  }
+  .right-section {
+    height: 29vh;
+    width: 60%;
+    padding: 1rem;
+    font-size: 0.5rem;
+    
+  }
+  .hello {
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+  .introName {
+    color: var(--orange);
+    font-size: 0.9rem;
+  }
+  .inroduction {
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.5rem;
+    margin: 1.1px;
+    line-height: 1rem;
+  }
+  .introPara {
+    margin-top: 0.7rem;
+  
+  }
+  .icons {
+  
+    font-size: 1.5rem;
+    margin: 0.4rem;
+    
+  }
+}
