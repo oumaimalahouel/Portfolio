@@ -4,8 +4,8 @@ section.hero {
 
 
 .hero .avatar {
-  height: 85vh;
-  width: 54vh;
+  height: 86vh;
+  width: 55vh;
 }
 .right-section {
  
@@ -15,7 +15,7 @@ section.hero {
   color: var(--title);
 }
 .hello {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 100;
 }
 .introName {
@@ -25,17 +25,16 @@ section.hero {
 .inroduction {
   font-size: 1.5rem;
 }
-p {
-  font-size: 0.9rem;
-  margin: 20px;
-  line-height: 2.2rem;
-}
+
 .introPara {
- 
+ font-size: 0.9rem;
+  margin-top: 20px;
+  line-height: 2.2rem;
   color: var(--subtitle);
+  margin-bottom: 2rem;
 }
 .icons {
-    margin-top: 1.5rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-evenly;
  
@@ -79,14 +78,13 @@ p {
   .inroduction {
     font-size: 0.9rem;
   }
-  p {
-    font-size: 0.5rem;
-    margin: 1.1px;
-    line-height: 1rem;
-  }
-  .introPara {
-    margin-top: 0.7rem;
   
+  .introPara {
+   
+   font-size: 0.5rem;
+    margin-top: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1rem;
   }
   .icons {
   

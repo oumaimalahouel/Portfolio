@@ -8,7 +8,7 @@ const Header = () => {
         onClick={() => setshowModal(true)}
         className="menu icon-menu flex"
       ></button>
-      <img src="./o.png" alt="" />
+      <img className="logo" src="./o.png" alt="" />
 
       <nav>
         <ul className="flex">
