@@ -1,0 +1,88 @@
+
+section.contactUs{
+    padding-left: 5rem;
+}
+
+section.contactUs .icon-envelope{
+color:var(--subtitle);
+margin-right: 1rem;
+font-size: 1.8rem;
+
+}
+section.contactUs .title{
+    font-size: 2.1rem;
+    color:var(--title);
+    margin-bottom:1rem ;
+}
+
+section.contactUs .subtitle{
+    color: var(--subtitle);
+    margin-bottom: 2rem;
+    line-height: 1.6rem;
+}
+section.contactUs label{
+    color: var(--subtitle);
+}
+section.contactUs #email, section.contactUs #message{
+    all:unset;
+    background-color: rgba(63, 63, 70,0.15) ;
+    border: 1px solid rgba(63, 63, 70);
+    width: 16rem;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius:5px ;
+    transition:0.3s ;
+
+}
+section.contactUs #email:focus, section.contactUs #message:focus{
+border:1px solid var(--orange) ;
+}
+section.contactUs #email:hover, section.contactUs #message:hover{
+    border:1px solid var(--orange) ;
+   
+    }
+section.contactUs #message{
+    min-height:9rem; 
+    resize: vertical;
+}
+section.contactUs .submit{
+    background-color: var(--bgHeader);
+    
+    padding: 0.75rem 1.9rem;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border: 1px solid rgba(63, 63, 70);
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 1.8rem;
+}
+section.contactUs .submit:hover{
+    scale:0.97;
+    color:var(--orange)
+}
+
+@media (max-width:600px) {
+    section.contactUs .animation{display: none;}
+    section.contactUs form{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+      
+    }
+    section.contactUs form div.flex{
+        flex-direction: column;
+        align-items: start;
+    }
+    section.contactUs #email, section.contactUs #message{
+    width: 100%;
+    margin-left: 0;
+    padding:0.7rem 0;
+    margin-top: 1rem;
+    }
+    section.contactUs .submit{
+        width: 30%;
+        align-self: center;
+       
+    }
+}
