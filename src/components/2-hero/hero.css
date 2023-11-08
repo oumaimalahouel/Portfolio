@@ -4,8 +4,9 @@ section.hero {
 
 
 .hero .avatar {
-  height: 86vh;
+  height: 87vh;
   width: 55vh;
+  filter: drop-shadow(0 0 0.75rem rgb(57, 52, 53));
 }
 .right-section {
  

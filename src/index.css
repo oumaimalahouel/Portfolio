@@ -37,7 +37,7 @@ background-color:var(--secondary) ;
 }
 .divider{
   border-bottom: 1px solid var(--border);
-  margin:3rem 0;
+  margin:1.5rem 0;
 }
 li{
   list-style : none;
@@ -63,7 +63,7 @@ button{
   }
   @media(max-width: 500px){
     .container{
-      width: 98%;
+     
       padding:0 1.7rem;
     }
 
