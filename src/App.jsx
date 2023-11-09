@@ -15,7 +15,7 @@ function App() {
 
 
   return (
-    <div className='container'>
+    <div id="up" className='container'>
      <Header />
      
       <Hero />
@@ -25,6 +25,11 @@ function App() {
       <Contact />
       <div className="divider"/>
       <Footer />
+      
+      <a href="#up">
+        
+      <button className=' icon-keyboard_arrow_up scrollTop'></button>
+      </a>
     </div>
   )
 }

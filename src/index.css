@@ -2,7 +2,11 @@
 html {
   font-family: 'Roboto', sans-serif;
   letter-spacing:1px  ;
+  scrollbar-color:red gray;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
+*,*:before,*::after{box-sizing: inherit;}
 *{
   margin: 0;
   padding: 0;
@@ -61,10 +65,57 @@ button{
   button :active{
     scale:0.9;
   }
+
+  ::-webkit-scrollbar{
+    width: 0.5rem;
+  }
+ ::-webkit-scrollbar-track{
+  border: 1px solid rgb(8, 0, 0);
+  box-shadow: inset 0 0 1px 1px rgba(54, 58, 83, 0.635);
+  border-radius: 0.5rem;
+  background: rgba(54, 58, 83, 0.635);
+ }
+  
+ ::-webkit-scrollbar-thumb{
+  background:  rgb(78, 75, 75);
+  border-radius: 2px;
+ }
+  
+ ::-webkit-scrollbar-thumb:hover{
+  background: rgba(188, 189, 194, 0.899);
+ }
+
+  .scrollTop{
+    background-color: var(--orange);
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    text-align: center;
+    border: 1px solid var(--border);
+    color: #fff
+  }
+  
+  .scrollTop:hover{
+    background-color:  #e47d57;
+    
+    ;
+  }
+  
+  
+  
+  
+  
   @media(max-width: 500px){
     .container{
      
       padding:0 1.7rem;
     }
-
+    .scrollTop{
+      opacity: 0.4;
+      width: 2rem;
+      height: 2rem;
+    }
   }
