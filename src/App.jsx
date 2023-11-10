@@ -1,4 +1,4 @@
-import React , { useState } from 'react'
+import React , { useEffect, useState } from 'react'
 
 import Hero from './components/2-hero/Hero'
 import Header from './components/1-header/Header'
@@ -13,7 +13,17 @@ import Main from './components/3-main/main'
 
 function App() {
 
-
+useEffect(()=>{
+  window.addEventListener("scroll",(first) => {
+    if(window.scrollY>350){
+      setshowScrollBTN(true)
+    }else{
+      setshowScrollBTN(false) 
+    }
+    
+  })
+},[])
+const [showScrollBTN, setshowScrollBTN] = useState(false)
   return (
     <div id="up" className='container'>
      <Header />
@@ -26,10 +36,12 @@ function App() {
       <div className="divider"/>
       <Footer />
       
-      <a href="#up">
+      {showScrollBTN && (
+        <a href="#up">
         
-      <button className=' icon-keyboard_arrow_up scrollTop'></button>
-      </a>
+        <button className=' icon-keyboard_arrow_up scrollTop'></button>
+        </a>
+      )}
     </div>
   )
 }
