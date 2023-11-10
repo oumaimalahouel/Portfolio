@@ -1,46 +1,90 @@
+import { useState } from "react";
 import "./main.css";
+import { myProjects } from "./myprojects";
 const Main = () => {
+  const [currentActive, setcurrentActive] = useState("all");
+  const [array, setarray] = useState(myProjects);
+  const handleClick= (buttonCategory) => { 
+    setcurrentActive(buttonCategory);
+            const newArr = myProjects.filter((item) => {
+              return item.category === buttonCategory;
+            });
+
+            setarray(newArr);
+   }
   return (
     <main className="flex">
       <section className="left-section flex">
-        <button className="active">All Projects</button>
-        <button>HTML & CSS</button>
-        <button>JavaScript</button>
-        <button>React js</button>
-        <button>Angular</button>
-      </section>
+        <button
+          onClick={() => {
+            setcurrentActive("all");
+            setarray(myProjects);
+          }}
+          className={currentActive === "all" ? "active" : null}
+        >
+          All Projects
+        </button>
 
-   <section className="right-section flex">
-          {["aa","bb","cc","dd"].map((item)=>{
-            return (
-        <article key={item}className="card">
-        <img width={266} src="./pressing.png" alt="" />
-        <div style={{width:"250px"}}className="box">
-          <h1 className="title">landing page</h1>
-          <p className="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iste quo debitis, dicta culpa nesciunt exercitationem sapiente officia deleniti ad quasi accusantium eius. Esse qui optio eum commodi aperiam possimus?</p>
-          <div className="flex icons">
-            
-         <div style={{gap:"11px"}}className="flex">
-         <div className="icon-link"></div>
-          <div className="icon-github"></div>
-         </div>
-          <a className="link flex"  href="">more
-          <span style={{alignSelf:"end"}} className="icon-arrow-right2"></span>
-          </a>
-          </div>
-        </div>
         
-        </article>    
-            )
-          })}
-
-
-
-      
+        
+        <button
+          onClick={() => {
+            handleClick("reactjs")
+          }}
+          className={currentActive === "reactjs" ? "active" : null}
+        >
+          React js
+        </button>
+        <button
+          onClick={() => {
+            handleClick("js")
+          }}
+          className={currentActive === "js" ? "active" : null}
+        >
+          JavaScript
+        </button>
+        <button
+          onClick={() => {
+            setcurrentActive("angular");
+            handleClick("angular")
+          }}
+          className={currentActive === "angular" ? "active" : null}
+        >
+          Angular
+        </button>
+        
       </section>
-     
+
+      <section className="right-section flex">
+        {array.map((item) => {
+          return (
+            <article key={item.imgPath} className="card">
+              <img width={266} src={item.imgPath} alt="" />
+              <div style={{ width: "250px" }} className="box">
+                <h1 className="title">{item.projectTitre}</h1>
+                <p className="subtitle">{item.description} </p>
+                <div className="flex icons">
+                  <div style={{ gap: "11px" }} className="flex">
+                   
+                   
+                    <div>
+                     <a className="icon-github" href={item.href}></a>
+                    </div>
+                  </div>
+                  <a className="link flex" href={item.href}>
+                    more
+                    <span
+                      style={{ alignSelf: "end" }}
+                      className="icon-arrow-right2"
+                    ></span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          );
+        })}
+      </section>
     </main>
-    
   );
 };
 

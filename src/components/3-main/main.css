@@ -51,6 +51,7 @@ main section.left-section{
 .card .box .title{
     color:var(--title);
     font-size: 1.2rem;
+    text-transform: capitalize;
 }
 .card .box .subtitle{
     color:var(--subtitle);
@@ -66,6 +67,7 @@ main section.left-section{
     background-image: linear-gradient(
         rgba(255,255,255,0.05),
         rgba(255,255,255,0.05));
+        height: 300px;
     }
     .card:hover{
         border:1px solid var(--orange);
