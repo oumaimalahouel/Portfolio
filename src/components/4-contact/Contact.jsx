@@ -46,7 +46,7 @@ const Contact = () => {
               <p style={{fontSize:"16px", marginTop:"1.7rem"}}>Your message has been sent successfully !</p>
           )}
         </form>
-        <div className="animation">animation</div>
+     
       </div>
     </section>
   );
