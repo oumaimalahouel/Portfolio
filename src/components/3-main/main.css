@@ -23,7 +23,7 @@ main section.left-section{
     
  }
  main section.left-section button{
-    background-color: var(--bgHeader);
+    background-color: var(--button);
     width: 11rem;
     padding: 0.75rem 0;
     text-align: center;

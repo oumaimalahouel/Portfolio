@@ -22,10 +22,19 @@ html {
   --orange: #e47d57e0;
   --icon-hover: #d4d4d8;
   --container-padding:4.8rem;
+  --button:#ffe5e516;
 
 }
 .light{
-  --primary:#fff;
+  --button:rgba(25, 20, 20, 0.847);
+  --primary:rgb(250, 250, 250);
+  --secondary :#fff;
+  --border: rgba(202,202,202,0.518);
+  --title:rgb(39 39 42);
+  --subtitle:rgb(82 82 91);
+  --bgHeader:rgb(253,253,253);
+  --orange: #e56739;
+  --icon-hover: #333;
 
 }
 body{

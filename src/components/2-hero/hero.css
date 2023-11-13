@@ -2,15 +2,12 @@ section.hero {
   justify-content: space-between;
 }
 
-
 .hero .avatar {
   height: 87vh;
   width: 55vh;
   filter: drop-shadow(0 0 0.75rem rgb(57, 52, 53));
 }
 .right-section {
- 
- 
   padding: 2rem;
   font-size: 1.5rem;
   color: var(--title);
@@ -28,7 +25,7 @@ section.hero {
 }
 
 .introPara {
- font-size: 0.9rem;
+  font-size: 0.9rem;
   margin-top: 20px;
   line-height: 2.2rem;
   color: var(--subtitle);
@@ -38,7 +35,7 @@ section.hero {
   margin-top: 2rem;
   display: flex;
   justify-content: space-evenly;
- 
+
   color: var(--orange);
 }
 .icon:hover {
@@ -47,50 +44,44 @@ section.hero {
   cursor: pointer;
 }
 @media (max-width: 700px) {
-    section.hero{
-        margin-top: -0.4em;
+  section.hero {
+    margin-top: -0.4em;
     flex-direction: row-reverse;
     justify-content: space-around;
-    
   }
 
   .hero .avatar {
-    height:20vh;
-    width: 15vh;
-    border-radius: 50% ;
+    height: 27vh;
+    width: 20vh;
+    border-radius: 50%;
     border: 1px solid var(--orange);
-    padding:3px
+    padding: 3px;
   }
   .right-section {
-   
     width: 60%;
     padding: 1rem;
     font-size: 0.5rem;
-    
   }
   .hello {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 100;
   }
   .introName {
     color: var(--orange);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   .inroduction {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
-  
+
   .introPara {
-   
-   font-size: 0.5rem;
+    font-size: 0.6rem;
     margin-top: 1.1rem;
     margin-bottom: 1.5rem;
     line-height: 1rem;
   }
   .icons {
-  
     font-size: 1.5rem;
     margin: 0.4rem;
-    
   }
 }
